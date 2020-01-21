@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "target": "es2018",
+    "sourceMap": true,
+    "lib": [
+      "es2018"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@zoupdown/*": ["packages/*"]
+    },
+    "pretty": true,
+  },
+  "exclude": [
+    "node_modules",
+    "__tests__",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+ }

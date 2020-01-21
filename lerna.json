@@ -1,0 +1,38 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.1-beta.0",
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "registry": "https://registry.npmjs.org/",
+      "ignoreChanges": [
+        "*.lock",
+        "package-lock.json",
+        "CHANGELOG.md",
+        ".npmrc"
+      ],
+      "allowBranch": [
+        "master"
+      ],
+      "commitHooks": false,
+      "message": "chore(release): publish",
+      "conventionalCommits": true
+    },
+    "bootstrap": {
+      "npmClient": "yarn"
+    }
+  },
+  "changelog": {
+    "repo": "zcorky/zoupdown",
+    "labels": {
+      "enchancement": ":rocket:(Enhancement)",
+      "bug": ":bug:(Bug Fix)",
+      "doc": ":doc:(Refine Doc)",
+      "feat": ":sparkles:(Feature)",
+      "chore": ":construction_worker:(Chore)"
+    },
+    "cacheDir": ".changelog"
+  }
+}
