@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/plugin-confirms",
-  "version": "0.0.1-beta.7",
+  "version": "0.0.1",
   "description": "An confirms plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
