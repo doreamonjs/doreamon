@@ -69,7 +69,7 @@ export class Model {
     
         // 
         *'click/logout/menu'(action, { put }) {
-          yield put({ type: 'application/logout' });
+          yield put({ type: 'authorization/logout' });
         },
         *'click/profile/menu'(action, { put }) {
           // @TODO
