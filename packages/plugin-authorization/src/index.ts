@@ -1,4 +1,8 @@
 export * from './types';
-export * from './model';
-export * from './service';
+
 export * from './constants';
+
+export * from './model';
+
+export * from './selector';
+export * from './service';

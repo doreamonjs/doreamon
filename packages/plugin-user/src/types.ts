@@ -7,10 +7,11 @@ export interface Action {
 
 export type Dispatch = (action: Action) => any | Promise<any>;
 
-export interface Authorization {
-  captcha: string;
-}
-
-export interface Captcha {
-  url: string;
+export interface User {
+  username: string;
+  nickname: string;
+  avatar?: string;
+  description?: string;
+  email?: string;
+  openid?: string;
 }

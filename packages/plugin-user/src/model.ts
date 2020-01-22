@@ -1,14 +1,8 @@
 import { Model as M } from 'dva';
+
+import { User } from './types';
 import { NAMESPACE } from './constants';
 
-export interface User {
-  username: string;
-  nickname: string;
-  avatar?: string;
-  description?: string;
-  email?: string;
-  openid?: string;
-}
 
 export interface Options {
   getUser(): Promise<User>;
