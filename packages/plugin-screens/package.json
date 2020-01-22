@@ -74,8 +74,5 @@
     "dva": "^2.4.1",
     "immer": "^5.3.2",
     "umi": "^2.13.3"
-  },
-  "dependencies": {
-    "@zcorky/query-string": "^1.0.2"
   }
 }
