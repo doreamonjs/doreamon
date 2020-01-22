@@ -76,5 +76,6 @@
   },
   "dependencies": {
     "@zcorky/delay": "^1.0.1"
-  }
+  },
+  "gitHead": "fcc1ebdafeaf169c914854eed073a4a7744b1d31"
 }

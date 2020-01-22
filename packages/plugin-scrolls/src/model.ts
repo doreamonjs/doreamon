@@ -1,6 +1,6 @@
 import { Model as M } from 'dva';
 
-import { Event } from '@zcorky/event';
+import { Event } from '@zodash/event';
 
 import { NAMESPACE } from './constants';
 
@@ -62,8 +62,4 @@ export class Model {
   }
 }
 
-export const subscriber = new Event<{
-  isTop?: boolean;
-  isBottom?: boolean;
-  isIdle?: boolean;
-}>();
+export const subscriber = new Event();

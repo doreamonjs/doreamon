@@ -74,5 +74,6 @@
     "dva": "^2.4.1",
     "immer": "^5.3.2",
     "umi": "^2.13.3"
-  }
+  },
+  "gitHead": "fcc1ebdafeaf169c914854eed073a4a7744b1d31"
 }
