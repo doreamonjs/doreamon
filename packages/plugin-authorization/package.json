@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/plugin-authorization",
-  "version": "0.0.1-beta.4",
+  "version": "0.0.1-beta.5",
   "description": "An authorization plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
