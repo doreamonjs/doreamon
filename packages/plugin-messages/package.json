@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/plugin-messages",
-  "version": "0.0.1-beta.5",
+  "version": "0.0.1-beta.7",
   "description": "An messages plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

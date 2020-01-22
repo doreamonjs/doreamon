@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/plugin-configs",
-  "version": "0.0.1-beta.5",
+  "version": "0.0.1-beta.7",
   "description": "An configs plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
