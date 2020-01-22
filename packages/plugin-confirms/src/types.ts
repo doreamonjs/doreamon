@@ -20,7 +20,7 @@ export type Confirms = {
 
 export type Attributes = {
   // meta
-  type: ConfirmType;
+  type: AttributeType;
   target: AttributeTarget;
   // content
   title: string;
