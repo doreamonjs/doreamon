@@ -1,4 +1,4 @@
-# `@doreamonjs/plugin-menu`
+# `@doreamonjs/plugin-s`
 
 > TODO: description
 

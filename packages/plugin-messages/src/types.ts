@@ -10,7 +10,7 @@ export type Dispatch = (action: Action) => any | Promise<any>;
 /**
  * Message
  */
-export interface Message {
+export interface Messages {
 
 }
 

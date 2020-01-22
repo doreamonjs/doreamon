@@ -5,4 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.0.1-beta.5](https://github.com/doreamonjs/doreamon/compare/v0.0.1-beta.4...v0.0.1-beta.5) (2020-01-22)
 
-**Note:** Version bump only for package @doreamonjs/plugin-menu
+**Note:** Version bump only for package @doreamonjs/plugin-menus

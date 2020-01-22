@@ -1,4 +1,4 @@
-# `@doreamonjs/plugin-message`
+# `@doreamonjs/plugin-messages`
 
 > TODO: description
 

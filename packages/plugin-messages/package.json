@@ -1,7 +1,7 @@
 {
-  "name": "@doreamonjs/plugin-menu",
+  "name": "@doreamonjs/plugin-messages",
   "version": "0.0.1-beta.5",
-  "description": "An menu plugin for doreamonjs",
+  "description": "An messages plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "sideEffects": false,
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/doreamonjs/doreamon",
   "keywords": [
     "doreamonjs",
-    "plugin-menu"
+    "plugin-messages"
   ],
   "author": "zero <tobewhatwewant@gmail.com>",
   "license": "MIT",
@@ -70,11 +70,12 @@
     "preset": "ts-jest"
   },
   "devDependencies": {
+    "antd": "^3.26.7",
     "dva": "^2.4.1",
     "immer": "^5.3.2",
     "umi": "^2.13.3"
   },
   "dependencies": {
-    "@zcorky/delay": "^1.0.1"
+    "@zcorky/query-string": "^1.0.2"
   }
 }

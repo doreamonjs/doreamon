@@ -1,4 +1,4 @@
-# `@doreamonjs/plugin-authorization`
+# `@doreamonjs/plugin-authorizations`
 
 > TODO: description
 

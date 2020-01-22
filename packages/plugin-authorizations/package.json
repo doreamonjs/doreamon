@@ -1,7 +1,7 @@
 {
-  "name": "@doreamonjs/plugin-authorization",
+  "name": "@doreamonjs/plugin-authorizations",
   "version": "0.0.1-beta.5",
-  "description": "An authorization plugin for doreamonjs",
+  "description": "An authorizations plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "sideEffects": false,
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/doreamonjs/doreamon",
   "keywords": [
     "doreamonjs",
-    "plugin-authorization"
+    "plugin-authorizations"
   ],
   "author": "zero <tobewhatwewant@gmail.com>",
   "license": "MIT",

@@ -9,7 +9,7 @@ import { NAMESPACE } from './constants';
 
 
 export interface Options {
-  getMenu(): Promise<MenuItem>;
+  getMenus(): Promise<MenuItem>;
 }
 
 export class Model {
@@ -18,7 +18,7 @@ export class Model {
   }
 
   build(): M {
-    const { getMenu } = this.options;
+    const { getMenus } = this.options;
 
     return {
       namespace: NAMESPACE,
@@ -67,7 +67,7 @@ export class Model {
       
       effects: {
         *'navigate'({ payload: path }, { select, put }) {
-          const { nav } = yield select(state => state.menu);
+          const { nav } = yield select(state => state.menus);
           const hasInHistory = nav.history.includes(path);
     
           const history = hasInHistory ? nav.history : [...nav.history, path];
@@ -87,7 +87,7 @@ export class Model {
           router.push(path);
         },
         *'navigate/replace'({ payload: path }, { select, put }) {
-          const { nav } = yield select(state => state.menu);
+          const { nav } = yield select(state => state.menus);
           const hasInHistory = nav.history.includes(path);
     
           // replace current
@@ -110,7 +110,7 @@ export class Model {
           router.replace(path);
         },
         *'nav/close'({ payload: path }, { select, put }) {
-          const { nav } = yield select(state => state.menu);
+          const { nav } = yield select(state => state.menus);
           
           const history = nav.history.filter(h => h !== path);
           const current = path === nav.current ? nav.prev : nav.current;
@@ -133,7 +133,7 @@ export class Model {
           }
         },
         *'nav/close/others'({ payload: path }, { select, put }) {
-          const { nav } = yield select(state => state.menu);
+          const { nav } = yield select(state => state.menus);
           
           const history = nav.history.filter(h => h === path);
           const current = nav.current;
@@ -143,7 +143,7 @@ export class Model {
           yield put({ type: 'save/nav', payload: _nav });
         },
         *'nav/close/all'({ payload: path }, { select, put }) {
-          const { nav } = yield select(state => state.menu);
+          const { nav } = yield select(state => state.menus);
     
           const history = [];
           const current = '/';
@@ -155,7 +155,7 @@ export class Model {
           yield put({ type: 'navigate', payload: current });
         },
         *'nav/refresh'({ payload: path }, { select, put, call }) {
-          const { nav } = yield select(state => state.menu);
+          const { nav } = yield select(state => state.menus);
           
           // @TODO
           // yield put({ type: 'navigate', payload: '/force-to-make-refresh' });
@@ -167,7 +167,7 @@ export class Model {
     
         *'fetch/menus'(action, { select, call, put }) {
           const { layout } = yield select(state => state.application);
-          const menus = yield call(getMenu, layout.rootPath, layout.safePaths);
+          const menus = yield call(getMenus, layout.rootPath, layout.safePaths);
     
           yield put({ type: 'save/menus', payload: menus });
         },

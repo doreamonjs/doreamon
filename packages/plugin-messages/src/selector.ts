@@ -1,15 +1,15 @@
-import { GlobalState, Menu } from './types';
+import { GlobalState, Messages } from './types';
 import { NAMESPACE } from './constants';
 
 export class Selector {
   constructor(private readonly state: GlobalState) {}
 
-  get value(): Menu {
+  get value(): Messages {
     const { values } = this.state[NAMESPACE];
     return values;
   }
 
-  get(key: keyof Menu) {
+  get(key: keyof Messages) {
     return this.value[key];
   }
 }

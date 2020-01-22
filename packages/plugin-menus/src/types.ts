@@ -15,7 +15,7 @@ export interface MenuItem {
   [key: string]: any;
 }
 
-export interface Menu {
+export interface Menus {
   nav: {
     type: 'tag' | 'breadcrumb';
     history: string[];
