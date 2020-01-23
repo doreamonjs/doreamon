@@ -7,7 +7,7 @@ export interface Options {
 }
 
 export class Model {
-  constructor(public readonly options: Options) {
+  constructor(public readonly options?: Options) {
 
   }
 
