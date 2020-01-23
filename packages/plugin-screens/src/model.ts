@@ -39,7 +39,7 @@ export class Model {
     
       effects: {
         *'fullscreen/toggle'(action, { select, put }) {
-          const { full } = yield select((state: any) => state.screen);
+          const { full } = yield select((state: any) => state.screens);
           const next = !full;
     
           if (next) {
@@ -52,7 +52,7 @@ export class Model {
         },
         *'lock'(action, { select, put }) {
           const { location } = yield select((state: any) => state.router);
-          const { password } = yield select((state: any) => state.screen);
+          const { password } = yield select((state: any) => state.screens);
           
           // if no password, input password
           if (!password) {
@@ -72,7 +72,7 @@ export class Model {
         },
         *'lock/detect'(action, { select, put }) {
           const { location } = yield select((state: any) => state.router);
-          const { lock, redirectUri } = yield select((state: any) => state.screen);
+          const { lock, redirectUri } = yield select((state: any) => state.screens);
         
           // locked, stay the state
           if (lock) return ;
@@ -89,7 +89,7 @@ export class Model {
     
         // unlock
         *'unlock'({ payload }, { select, put }) {
-          const { password, redirectUri } = yield select((state: any) => state.screen);
+          const { password, redirectUri } = yield select((state: any) => state.screens);
           
           // if password doesnot match, raise error
           if (payload !== password) {
