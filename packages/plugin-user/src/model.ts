@@ -63,17 +63,17 @@ export class Model {
     
         // 
         *'click/logout/menu'(action, { put }) {
-          yield put({ type: 'authorization/logout' });
+          yield put({ type: 'authorizations/logout' });
         },
         *'click/profile/menu'(action, { put }) {
           // @TODO
         },
         *'click/setting/menu'(action, { put }) {
           const settingPath = '/setting';
-          yield put({ type: 'menu/navigate', payload: settingPath });
+          yield put({ type: 'menus/navigate', payload: settingPath });
         },
         *'click/fullscreen/menu'(action, { select, call, put }) {
-          yield put({ type: 'screen/fullscreen/toggle' });
+          yield put({ type: 'screens/fullscreen/toggle' });
         },
         *'click/lockscreen/menu'(action, { select, put }) {
           // const state = yield select(state => state);
@@ -87,7 +87,7 @@ export class Model {
           //     redirectUri: current,
           //   },
           // });
-          yield put({ type: 'screen/lock' });
+          yield put({ type: 'screens/lock' });
         },
         // business
         *'avatar/change'({ payload: avatar }, { put }) {
