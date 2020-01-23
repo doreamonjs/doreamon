@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/plugin-scrolls",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An scrolls plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
