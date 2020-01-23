@@ -149,7 +149,7 @@ export class Model {
         *'select/app'({ payload: app = {} }, { put }) {
           // @TODO home page
           if (!app.homepage) {
-            return put({ type: 'message/tip/error', payload: `${app.name} 应用已损坏，请联系管理员` });
+            return put({ type: 'messages/tip/error', payload: `${app.name} 应用已损坏，请联系管理员` });
           }
     
           if (app.active === false) {
@@ -178,7 +178,7 @@ export class Model {
     
           dispatch({ type: 'user/fetch/user' });
     
-          dispatch({ type: 'menu/fetch/menus' });
+          dispatch({ type: 'menus/fetch/menus' });
     
           dispatch({ type: 'fetch/apps' });
         },
