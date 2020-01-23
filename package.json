@@ -3,12 +3,12 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --no-ci",
-    "build": "lerna run tsc",
+    "build": "lerna run build",
     "test": "lerna run test",
     "coverage": "codecov",
     "clean": "lerna clean",
-    "publish": "lerna run tsc && lerna publish",
-    "publish:ci": "lerna run tsc && lerna publish --canary --yes"
+    "publish": "lerna run build && lerna publish",
+    "publish:ci": "lerna run build && lerna publish --canary --yes"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
