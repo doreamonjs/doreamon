@@ -166,7 +166,7 @@ export class Model {
         },
     
         *'fetch/menus'(action, { select, call, put }) {
-          const { layout } = yield select(state => state.application);
+          const { layout } = yield select(state => state.applications);
           const menus = yield call(getMenus, layout.rootPath, layout.safePaths);
     
           yield put({ type: 'save/menus', payload: menus });
