@@ -1,0 +1,67 @@
+@pagesLoginPrefixCls: pages-register;
+
+.@{pagesLoginPrefixCls} {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // margin: -160px 0 0 -160px;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  // height: 320px;
+  padding: 36px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .08);
+  background-color: #fff;
+
+  .@{pagesLoginPrefixCls}__logo {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .@{pagesLoginPrefixCls}__image {
+      width: 40px;
+      margin-right: 8px;
+    }
+  
+    .@{pagesLoginPrefixCls}__text {
+      vertical-align: text-bottom;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: 700;
+      color: #1890ff;
+    }
+  }
+  
+  .@{pagesLoginPrefixCls}__form {
+    
+    .@{pagesLoginPrefixCls}__prefix {
+      color: rgba(0,0,0,.25);
+    }
+
+    .@{pagesLoginPrefixCls}__sendCaptcha {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - 2px);
+      height: 40px;
+    }
+  }
+
+  .@{pagesLoginPrefixCls}__submitBtn {
+    width: 100%;
+  }
+  
+  .@{pagesLoginPrefixCls}__connection {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 4px;
+    padding: 4px;
+  }
+  
+  .@{pagesLoginPrefixCls}__goLogin {
+    text-align: center;
+  }
+}
