@@ -1,0 +1,72 @@
+@pagesLoginPrefixCls: pages-login;
+
+.@{pagesLoginPrefixCls} {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // margin: -160px 0 0 -160px;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  // height: 320px;
+  padding: 36px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .08);
+  background-color: #fff;
+
+  :global {
+    body {
+      background-image: url(http://res.cloudinary.com/mmdirir94/image/upload/v1519167949/architecture-3121009_960_720_lix21u.jpg) !important;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .pages-login__logo {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .pages-login__image {
+      width: 40px;
+      margin-right: 8px;
+    }
+  
+    .pages-login__text {
+      vertical-align: text-bottom;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: 700;
+      color: #1890ff;
+    }
+  }
+  
+  .pages-login__form {
+    
+    .pages-login__prefix {
+      color: rgba(0,0,0,.25);
+    }
+
+    .pages-login__captcha {
+      cursor: pointer;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      width: 100%;
+      height: 40px;
+    }
+  }
+  
+  .pages-login__submitBtn {
+    width: 100%;
+  }
+  
+  .pages-login__connection {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 4px;
+    padding: 4px;
+  }
+}
