@@ -56,7 +56,7 @@ export class Model {
         *submit(action, { select, put, call, take }) {
           yield call(delay, 300);
     
-          const { attributes, datasets } = yield select(state => state.confirm);
+          const { attributes, datasets } = yield select(state => state.confirms);
           const { target } = attributes || {};
     
           if (!target) {
