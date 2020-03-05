@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/pages-login",
-  "version": "0.0.1-beta.6",
+  "version": "0.0.7",
   "description": "An login page for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
