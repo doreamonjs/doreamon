@@ -33,7 +33,7 @@ export class Model {
         values: {
           username: 'zero',
           nickname: 'Zero',
-          avatar: 'https://avatars1.githubusercontent.com/u/7463687?s=460&v=4',
+          avatar: null, // 'https://avatars1.githubusercontent.com/u/7463687?s=460&v=4',
         },
       },
     

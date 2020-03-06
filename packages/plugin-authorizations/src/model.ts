@@ -91,8 +91,10 @@ export class Model {
           }
     
           // solution @2
-          const currentPath = window.location.pathname;
-          window.location.href = `/login?redirect=${encodeURIComponent(currentPath)}`;
+          // const currentPath = window.location.pathname;
+          // window.location.href = `/login?redirect=${encodeURIComponent(currentPath)}`;
+          
+          window.location.href = `/logout`;
         },
     
         *register({ payload }, { race, call, put }) {
