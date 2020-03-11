@@ -28,13 +28,13 @@ export class Model {
         'global.system.faq': true,
     
         // 4.Notice: Notification + Message + TODO
-        'global.system.notice': true,
+        'global.system.notice': false,
     
         // 5.Search
-        'global.system.search': true,
+        'global.system.search': false,
     
         // 6.Menu Collapse
-        'global.system.menu.collapse': true,
+        'global.system.menu.collapse': false,
     
         // 7.Allow Query Layout
         'global.system.query.layout': true,
