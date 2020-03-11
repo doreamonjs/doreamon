@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/plugin-screens",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "An screens plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

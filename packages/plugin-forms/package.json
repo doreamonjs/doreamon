@@ -1,6 +1,6 @@
 {
   "name": "@doreamonjs/plugin-forms",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "An forms plugin for doreamonjs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
