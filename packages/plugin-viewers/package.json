@@ -1,5 +1,5 @@
 {
-  "name": "@doreamonjs/plugin-viewer",
+  "name": "@doreamonjs/plugin-viewers",
   "version": "0.0.8",
   "description": "An viewer plugin for doreamonjs",
   "main": "lib/index.js",
